@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    box-shadow: 0 0 10px rgba(241, 228, 228, 0.1);
+    min-height:100vh ;
+    width: 100%;
+    background-image: linear-gradient(rgba(27, 41, 96, 0.7),rgba(19, 19, 23, 0.7)), url("images\\vegetable garden aesthetic - Google Search_files\\cottagecore-aesthetic-fruits-vegetables-pumpkin-pears-apple-melon-thanksgiving-day-concept-autumn-still-life-with-red-dahlia-mug-tea_430027-3455.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: 1s slid;
+}
+@keyframes slid {
+    0% {
+      bottom: -100px;
+      opacity: 0;
+    }
+    100% {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    text-align: right;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%) ;
+    text-align: center;
+}
+ 
+.text-box{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%) ;
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 10px 0 40px;
+    position: relative;
+}
+.text-box p{
+    font-size: 14px;
+    color: #fff;
+    margin: 10px 0 40px;
+    position: relative;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    font-size: medium;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    background-color: #f44336;
+    color: #fff;
+    border: 1px solid #f44336;
+    transition: 0.5s;
+}
+@media(maxwidth: 768px){
+    .text-box h1{
+        font-size: 30px;
+        display: none;
+    }
+    .nav-links ul li{
+        display:block;
+
+    }
+    .nav-links{
+        position: absolute;
+        background:#f44;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -20px;
+        text-align: left;
+        transition: all 0.5s;
+        z-index: 2;
+
+    }
+    
+}
+.given-veggies{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: ;
+    padding-top: 100px;
+    background-image: none;
+    background-color:none;
+}
+.given-veggies h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 10px 0 40px;
+}
+.given-veggies p{
+    font-size: 14px;
+    color: #150f0f;
+    margin: 10px 0 40px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+body{
+    background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
