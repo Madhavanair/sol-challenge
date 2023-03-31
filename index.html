@@ -1,39 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <nav>
-                <img src="images\\logo.png" alt="">
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="text">
-                <div class="text-box">
-                    <h1>Welcome to Community </h1>
-                    <p>We grow fresh organic vegetables & fruits and create awarness amongst the young individuals in creating a healthy community which is able to socialise as well as consume healthier foods</p>
-                    <a href="#" class="hero-btn">Explore</a>
-                </div>
-            </div>
+      <!--header class-->
+      <div class="header">
+        <nav>
+          <img
+            src="images\vegetable garden aesthetic - Google Search_files\Madhav's Community Logo Black Icon.png"
+            alt=""
+          />
+          <div class="nav-links">
+            <ul>
+              <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="https://medium.com/@madhavanair18/community-an-app-website-to-make-this-generation-realise-the-importance-of-better-food-22af69ae8639" rel="noopener" target="_blank">Blog</a></li>
+              <li><a href="shopcart.html">Shopping Cart</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="text">
+          <div class="text-box">
+            <h1>Welcome to Community</h1>
+            <p>
+              We grow fresh organic vegetables & fruits and create awarness
+              amongst the young individuals in creating a healthy community
+              which is able to socialise as well as consume healthier foods
+            </p>
+            <a href="https://medium.com/@madhavanair18/community-an-app-website-to-make-this-generation-realise-the-importance-of-better-food-22af69ae8639" class="hero-btn" target="_blank">
+              Read more
+            </a>
+          </div>
         </div>
-        <div class="given-veggies">
-            <div class="container">
-                <h2>Some of our Given Vegetables</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tortor nec metus eleifend blandit. Etiam condimentum, risus vel luctus blandit, velit leo viverra ante, eu convallis eros ex eu velit.</p>
-            </div>
+      </div>
+      <!---given veggies to sell-->
+      <div class="given-veggies">
+        <div class="container">
+          <h2>Some of our Given Vegetables</h2>
+          <p>
+					products which are available to sell	
+					</p>
         </div>
+        <div class="row">
+          <!--products we are selling-->
+          <div class="col">
+            <h3>Carrot</h3>
+            <p>Carrots are a rich source of vitamin A, fiber, and antioxidants, making them a healthy addition to any diet. They can be eaten raw or cooked, and are commonly used in a variety of dishes such as salads, stews, soups, and stir-fries. Carrots can also be juiced or blended into smoothies for a nutritious drink option, currently no carrots are available right now .</p>
+						<button class="cart-btn">Add to Cart</button>
+          </div>
+					<div class="col">
+            <h3>Tomato</h3>
+            <p>
+              Tomatoes are rich in vitamins and minerals, especially vitamin C and potassium. They are also a good source of lycopene, an antioxidant that may help reduce the risk of certain types of cancer and heart disease.currently no tomatoes being sold in your areaa
+            </p><button class="cart-btn">Add to Cart</button>
+          </div>
+          <div class="col">
+            <h3>Spinach</h3>
+            <p>
+              Spinach is a tasty vegetable which is rich and nutritious with vitamin B12, they are a good source of  antioxidants and reduce the risk of cancer and antioxidants , currently no Spinachs sold in your area 
+            </p>
+						<button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <!--google maps modal-->
+			<div id="id01" class="w3-modal">
+				<div class="w3-modal-content">
+					<div class="w3-container">
+						<span onclick="document.getElementById('id01').style.display='none'"
+						class="w3-button w3-display-topright">&times;</span>
+						<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0407858785966!2d80.15123961461045!3d12.840640990941983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259af8e491f67%3A0x944b42131b757d2d!2sVellore%20Institute%20of%20Technology%20-%20VIT%20Chennai!5e0!3m2!1sen!2sin!4v1680204641828!5m2!1sen!2sin"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+					</div>
+				</div>
+			</div>
+			
+      <!---products to sell-->
+      <div class="products">
+				<div>
+					<h3>Available products</h3>
+					<p>You are selling these products!</p>
+				</div>
+        <!---products usual problem-->
+        <div class="row">
+          <!--raw banana sold here-->
+					<button
+            onclick="document.getElementById('id01').style.display='block'"
+						class="map-button"
+          >
+          <div class="campus-col">
+            <img
+              src="images\vegetable garden aesthetic - Google Search_files\images (3).jpg"
+              alt=""
+            />
+            <div class="layer">
+              <span class="close">
+                <h3>raw banana</h3>
+              </span>
+            </div>
+          </div>
+					</button>
+          <!-- coconut sold here -->
+          <button
+						class="map-button"
+            onclick="document.getElementById('id01').style.display='block'"
+          >
+            <div class="campus-col">
+              <img
+                src="images\vegetable garden aesthetic - Google Search_files\download (3).jpg"
+                alt=""
+              />
+              <div class="layer">
+                <h3>coconuts</h3>
+              </div>
+            </div>
+          </button>
+          <!---mangoes sold here-->
+					<button
+						class="map-button"
+            onclick="document.getElementById('id01').style.display='block'"
+          >
+          <div class="campus-col">
+            <img
+              src="images\vegetable garden aesthetic - Google Search_files\download (5).jpg"
+              alt=""
+            />
+            <div class="layer">
+              <h3>mangoes</h3>
+            </div>
+          </div>
+					</button>
+        </div>
+      </div>
     </header>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

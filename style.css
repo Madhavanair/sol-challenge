@@ -3,6 +3,10 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
+body {
+    overflow: hidden;
+}
 .header{
     box-shadow: 0 0 10px rgba(241, 228, 228, 0.1);
     min-height:100vh ;
@@ -14,15 +18,13 @@
     animation: 1s slid;
 }
 @keyframes slid {
-    0% {
-      bottom: -100px;
-      opacity: 0;
+    0% { bottom: -100px;opacity: 0;
+    }100% 
+    {
+        bottom: 0;
+        opacity: 1;
     }
-    100% {
-      bottom: 0;
-      opacity: 1;
-    }
-  }
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -75,7 +77,7 @@ nav img{
     transform:translate(-50%,-50%) ;
     text-align: center;
 }
- 
+
 .text-box{
     margin: 10px 0 40px;
     font-size: 14px;
@@ -139,28 +141,33 @@ nav img{
     
 }
 .given-veggies{
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin-top: 25px;
     text-align: center;
-    display: ;
-    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 10px 20px 10px;
     background-image: none;
     background-color:none;
 }
 .given-veggies h1{
     font-size: 50px;
     font-weight: 700;
-    margin: 10px 0 40px;
+    margin: 30px 0 40px;
 }
 .given-veggies p{
     font-size: 14px;
     color: #150f0f;
-    margin: 10px 0 40px;
+    margin: 20px 0 40px;
     font-weight: 300;
     line-height: 22px;
 }
-
-
+@media screen and (max-width: 768px){
+    .given-veggies{
+        flex-direction: column;
+    }
+}
 body{
     background-color: #f5f5f5;
     font-family: 'Open Sans', sans-serif;
@@ -170,4 +177,91 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.row{
+    display: flex;
+    margin-top:5%;
+    justify-content: space-between;
+}
+.col {
+    flex-basis: 33%;
+    background: floralwhite;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.col:hover {
+    background-color: pink;
+    box-shadow: 0 0 10px rgba(14, 0, 0, 0.1);
+}
+
+h3{
+    text-align: center;
+    font-weight: 20px;
+    margin: 10px 0;
+}
+/*-------product.html-----------------*/
+.products {
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+} 
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.campus-col img{
+    width: 75%;
+}
+.layer{
+    background:transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transition:0.5s
+}
+.layer:hover{
+    background: rgba(8, 162, 21, 0.7);
+}
+.layer h3{
+    width:100%;
+    font-weight: 500;
+    color:#fff;
+    font-size: 26px;
+    top: 30%;
+    transition: translate(-50%);
+    position:absolute;
+}
+
+.map-button {
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    flex-grow: 1;
+}
+
+.cart-btn {
+    padding: 2px 10px;
+    border-radius: 0.25rem;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.cart-btn:hover {
+    background-color: lightgray;
+
 }

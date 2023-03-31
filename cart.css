@@ -1,0 +1,68 @@
+/* Set background image for the header */
+header {
+    background-image: url("images\vegetable garden aesthetic - Google Search_files\images (2).jpg");
+    background-size: cover;
+  }
+  
+  /* Style for the shopping cart container */
+  .cart {
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0 0 10px #210958;
+  }
+  
+  /* Style for the shopping cart icon */
+  .fa-shopping-cart {
+    color: #2ae10e;
+    font-size: 30px;
+  }
+  
+  /* Style for the "Continue Shopping" button */
+  .btn {
+    background-color: #7fbdff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #888888;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+    text-transform: uppercase;
+    height: -moz-fit-content;
+    height: fit-content;
+    
+  }
+  
+  /* Hover effect for the "Continue Shopping" button */
+  .btn:hover {
+    background-color: #005bbcba;
+    color: white;
+  }
+  
+  /* Style for the shopping cart title */
+  h1 {
+    color: #0c0903;
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  /* Style for the "Continue Shopping" button container */
+  .col-2 {
+    display: flex;
+    /* justify-content: flex-end; */
+  }
+
+  
+  /* Add a background image to the row */
+  .row {
+    background-image: linear-gradient(rgba(27, 41, 96, 0.7),rgba(3, 3, 85, 0.7)),url("images\vegetable garden aesthetic - Google Search_files\images (2).jpg");
+    background-size: cover;
+    display: flex;
+  }
+  
