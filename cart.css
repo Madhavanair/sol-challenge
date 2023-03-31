@@ -1,5 +1,17 @@
 /* Set background image for the header */
-header {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,600;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 0%;
+  padding: 0%;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
+}
+  header {
     background-image: url("images\vegetable garden aesthetic - Google Search_files\images (2).jpg");
     background-size: cover;
   }
@@ -33,8 +45,8 @@ header {
     text-decoration: none;
     
     text-transform: uppercase;
-    height: -moz-fit-content;
     height: fit-content;
+    height: -moz-fit-content;
     
   }
   

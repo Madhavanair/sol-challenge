@@ -1,38 +1,105 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang = 'en'>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a759b0c572.js" crossorigin="anonymous"></script>
-    <title>shopping-cart</title>
-    <link rel="stylesheet" href="cart.css">
+	<title>Shopping Cart</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			margin: 0;
+			padding: 0;
+		}
 
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		h1 {
+			font-size: 32px;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+
+		.product {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.product h3 {
+			font-size: 24px;
+			margin: 0;
+		}
+
+		.product p {
+			font-size: 18px;
+			margin: 0;
+			color: #666;
+		}
+
+		.product button {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 4px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+
+		.product button:hover {
+			background-color: #3e8e41;
+		}
+
+		.cart {
+			margin-top: 20px;
+			padding: 0;
+			list-style: none;
+		}
+
+		.cart li {
+			font-size: 18px;
+			padding: 10px;
+			background-color: #f9f9f9;
+			margin-bottom: 10px;
+			border-radius: 4px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.cart li span {
+			font-size: 24px;
+			font-weight: bold;
+			color: #666;
+		}
+	</style>
 </head>
 <body>
-    <header>
-        <div class="cart">
-            <div class="container">
-                <nav>
-                <div class="row">
-                    <img src="images\vegetable garden aesthetic - Google Search_files\images (2).jpg" alt="">
-                    <div class="col-2">
-                        <h1>Shopping Cart</h1>
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="col-2">
-                        <a href="index.html" class="btn">Continue Shopping</a>
-                    </div>
-                </div>
-                </nav>
-            </div>
+	<div class="container">
+		<h1>Products:</h1>
+		<div class="product">
+			<h3>Carrot</h3>
+			<p>Price: $1.00</p>
+			<button onclick="addToCart('carrot')">Add to cart</button>
+		</div>
+		<div class="product">
+			<h3>Tomato</h3>
+			<p>Price: $2.00</p>
+			<button onclick="addToCart('tomato')">Add to cart</button>
+		</div>
 
-        </div>
+		<h1>Shopping Cart:</h1>
+		<ul class="cart" id="cart"></ul>
+	</div>
 
-    </header>
-    
-    <main>
-        
-    </main>
-    <script src="script.js" ></script>
+	<script src="script.js"></script>
 </body>
 </html>
